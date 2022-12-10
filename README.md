@@ -22,7 +22,7 @@ $ zip -r NibbsApp.zip NibbsIntegration-0.0.1-SNAPSHOT.jar config
 ## How to Test? ##
     
 >In UAT:\  
-curl http://<DMZ_SERVER_IP>:8080/create/schedules
+curl http://<DMZ_SERVER_IP>:8081/create/schedules
 
 >In ERP:\
-SELECT utl_http.request('http://<DMZ_SERVER_IP>:8080/create/schedules') FROM dual;
+SELECT utl_http.request('http://<DMZ_SERVER_IP>:8081/create/schedules') FROM dual;
