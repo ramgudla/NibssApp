@@ -12,7 +12,7 @@ $ zip -r NibbsApp.zip NibbsIntegration-0.0.1-SNAPSHOT.jar config
 >In DMZ server:\
     $ cd /home/nibbs\
     $ rm -rf *\
-    $ unzip NibbsApp.zip\
+    $ unzip NibbsApp.zip (After unzipping, you will see a folder named 'config'. Inside this folder, there is a file named 'application.properties'. Update the db details in this file.)\
     Kill the running application java process:\
       $ ps -ef | grep NibbsIntegration-0.0.1-SNAPSHOT.jar\
       $ kill -9 `<pid>`\
