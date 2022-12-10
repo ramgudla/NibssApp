@@ -8,7 +8,7 @@ $ cd target\
 $ zip -r NibbsApp.zip NibbsIntegration-0.0.1-SNAPSHOT.jar config
 
 ## How to import cert to truststore? In production may not be needed!##
-echo quit\
+echo quit\\
          | openssl s_client -servername apitest.nibss-plc.com.ng -showcerts -connect apitest.nibss-plc.com.ng:443\
          | openssl x509 -outform PEM\
          > apitest.nibss-plc.com.ng
