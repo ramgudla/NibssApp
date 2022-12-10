@@ -7,6 +7,17 @@ $ mvn clean install\
 $ cd target\
 $ zip -r NibbsApp.zip NibbsIntegration-0.0.1-SNAPSHOT.jar config
 
+## How to import cert to truststore? In production may not be needed!##
+echo quit\
+         | openssl s_client -servername apitest.nibss-plc.com.ng -showcerts -connect apitest.nibss-plc.com.ng:443\
+         | openssl x509 -outform PEM\
+         > apitest.nibss-plc.com.ng
+
+keytool -import -keystore nibbs-truststore.p12 -alias apitest-nibss -file apitest.nibss-plc.com.ng -trustcacerts -storepass changeit
+
+keytool -list -keystore nibbs-truststore.p12 -storepass changeit
+
+
 ## How to Run? ##
 
 >In DMZ server:\
