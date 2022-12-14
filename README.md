@@ -31,7 +31,8 @@ $ zip -r NibbsApp.zip NibbsIntegration-0.0.1-SNAPSHOT.jar config
       $ ps -ef | grep NibbsIntegration-0.0.1-SNAPSHOT.jar\
       $ kill -9 `<pid>`\
     Run the Service:\
-      $ java -Dserver.port=8081 -jar NibbsIntegration-0.0.1-SNAPSHOT.jar --logging.config=config/logback-spring.xml --spring.config.location=config/application.properties &
+      $ java -Dserver.port=8081 -Dhttps.proxyHost=172.23.12.67 -Dhttps.proxyPort=4145 -jar NibbsIntegration-0.0.1-SNAPSHOT.jar --logging.config=config/logback-spring.xml --spring.config.location=config/application.properties &
+
 
 ## How to Test? ##
     
