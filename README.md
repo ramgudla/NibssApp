@@ -8,7 +8,7 @@ $ cd target\
 $ zip -r NibbsApp.zip NibbsIntegration-0.0.1-SNAPSHOT.jar config
 
 ## How to import cert to truststore? In production may not be needed!##
-**If the nibbs api endpoints certificate is from a wellknown CA, then set the property: 'custom.trust=false' in 'config/application.properties' file after unzipping the NibbsApp.zip file into DMZ server. Otherwise (If its a self signed certificate), export the certificate from the nibbs api host and import into the custom truststore. Do the following:**
+>**If the nibbs api endpoints certificate is from a wellknown CA, then set the property: 'custom.trust=false' in 'config/application.properties' file after unzipping the NibbsApp.zip file into DMZ server. Otherwise (If its a self signed certificate), export the certificate from the nibbs api host and import into the custom truststore. Do the following:**
       
       ```
       echo quit\
