@@ -41,7 +41,7 @@ curl http://<DMZ_SERVER_IP>:8081/create/schedules
 curl http://<DMZ_SERVER_IP>:8081/process/payments
 
 >In DMZ:\  
-curl http://localhost:8081/create/schedules\
+curl http://localhost:8081/create/schedules\\
 curl http://localhost:8081/process/payments
 
 >In ERP:\
