@@ -37,8 +37,10 @@ $ zip -r NibssApp.zip NisbsIntegration-0.0.1-SNAPSHOT.jar config
 ## How to Test? ##
     
 >In UAT:\  
+```
 curl http://<DMZ_SERVER_IP>:8081/create/schedules
 curl http://<DMZ_SERVER_IP>:8081/process/payments
+```
 
 >In DMZ:\  
 curl http://localhost:8081/create/schedules
