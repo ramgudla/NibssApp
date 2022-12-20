@@ -42,10 +42,14 @@ curl http://<DMZ_SERVER_IP>:8081/create/schedules
 curl http://<DMZ_SERVER_IP>:8081/process/payments
 ```
 
->In DMZ:\  
+>In DMZ:\ 
+``` 
 curl http://localhost:8081/create/schedules
 curl http://localhost:8081/process/payments
+```
 
 >In ERP:\
+```
 SELECT utl_http.request('http://<DMZ_SERVER_IP>:8081/create/schedules') FROM dual;\
 SELECT utl_http.request('http://<DMZ_SERVER_IP>:8081/process/payments') FROM dual;
+```
